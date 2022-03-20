@@ -81,7 +81,6 @@ section > img{
     width: 50%;
     display: inline-block;
     margin-left: 20px;
-    background-color: bisque;
 }
 
 div{ 
@@ -121,8 +120,24 @@ section > div > a{
     border: 2px orangered;
     box-shadow:  
     -5px -5px 10px rgb(190, 53, 3),
-    5px 5px 10px rgba(70, 70, 70, 0.12);  ;
+    5px 5px 10px rgba(70, 70, 70, 0.12);  
 
+}
+section > div > a:hover{
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 0, 0);
+    border: 2px rgb(245, 1, 1);
+    box-shadow:  
+    -5px -5px 10px rgb(179, 3, 3),
+    5px 5px 10px rgba(70, 70, 70, 0.12); 
+
+}
+
+section > div > p{
+
+    padding-bottom: 30px;
 }
 
 span{
