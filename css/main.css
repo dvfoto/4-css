@@ -1,3 +1,7 @@
+body{
+    background-color: antiquewhite;
+}
+
 main{
     width: 1200px;
     margin-left: calc((100% - 1200px) / 2);
@@ -16,6 +20,7 @@ header > a > img{
     display: inline-block;
     float: left;
     margin-top: 6px;
+    border: 1px solid transparent ;
 }
 
 main > header > a  img:hover {
