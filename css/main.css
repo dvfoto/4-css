@@ -1,20 +1,52 @@
+:root{
+
+    --plotis: 1300px;
+    --soninis-atstumas: calc((100% - var(--plotis)) / 4);
+    --main-width: calc(100% - var(--soninis-atstumas));
+    --text-width: calc(var(--plotis) * 0.4);
+    --image-width: calc(100% - var(--plotis) / 2);
+    --text-margin: calc(var(--plotis) * 0.1);
+
+
+}
 body{
     background-color: antiquewhite;
 }
 
 main{
-    width: 1200px;
-    margin-left: calc((100% - 1200px) / 2);
+    width: var(--main-width);
+    margin-left: var(--soninis-atstumas);
     display: inline-block;
 
 }
 header{
-
-    width: 100%;
+    
     display: inline-block;
-    margin-top: 20px;;
+    width: var(--plotis);
+    margin-left: var(--soninis-atstumas);
+    background-color: aquamarine;
 
 }
+section{
+}
+
+div{ 
+    display: inline-block;
+    width: var(--text-width);
+    margin-right: var(--text-margin);
+
+    float: left;
+}
+
+
+
+section > img{
+    display: inline-block;
+    width: var(--image-width);
+    float: left;
+}
+
+
 header > a > img{
     height:  30px;
     display: inline-block;
@@ -77,48 +109,37 @@ main > header > p+p{
 }
 
     
-section {
-    margin-top: 100px;
-    display:inline-block ;
-}
 
-section > img{
-    width: 50%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
-div{ 
-    width: 35%;
-    display: inline-block;
-    float: left;
-}
     
 
 h1{
-    font-size: 60px;
-    margin-bottom: 50px;
+    display: inline-block;
+    width: 100%;
+    font-size: 50px;
+    l
 
 }
 
 h2{
-
+    
+    display: inline-block;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
-    margin-top: -50px;
 
 
 }
 
 section > div > a{
 
+    margin-left: 20%;
     padding: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: orangered;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 85px;
     color: aliceblue;
     text-shadow: 20px gray;
     border-radius: 5px;
@@ -141,7 +162,9 @@ section > div > a:hover{
 }
 
 section > div > p{
-
+    
+    display: inline-block;
+    width: 100%;
     padding-bottom: 30px;
 }
 
